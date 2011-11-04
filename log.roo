@@ -1,0 +1,15 @@
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-04 10:07:28
+project --topLevelPackage com.penho.java.rool --projectName rool
+persistence setup --database MYSQL --provider HIBERNATE
+// [failed] entity --class ~.Role --testAutomatically 
+entity --class ~.SysRole --testAutomatically 
+field string --fieldName roleName --notNull
+controller all --package ~.web
+entity --class ~.SysUser --testAutomatically 
+field string --fieldName userName --notNull --sizeMin 3
+field string --fieldName password --notNull --sizeMin 3
+field boolean --fieldName enabled --notNull 
+field date --fieldName lastLogin --type java.util.Date 
+field set --type ~.SysRole --fieldName userRole --cardinality MANY_TO_MANY --notNull 
+controller all --package ~.web 
+security setup

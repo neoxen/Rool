@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_penho_java_rool_SysUser" items="${sysusers}" z="psiMpt3rRnZxZBRBWU/xtV8S+D0=">
+        <table:table data="${sysusers}" id="l_com_penho_java_rool_SysUser" path="/sysusers" z="2/JldgCyB4O3+4825X3PhBjfvng=">
+            <table:column id="c_com_penho_java_rool_SysUser_userName" property="userName" z="7IflRfIBoR+X5Mk4IL5qmrE4fAE="/>
+            <table:column id="c_com_penho_java_rool_SysUser_password" property="password" z="d+RVN7jXOG2biwf4G/3CjIGBosk="/>
+            <table:column id="c_com_penho_java_rool_SysUser_enabled" property="enabled" z="zAAMxv0KeRyX1GptvCHCZTuZAN0="/>
+            <table:column date="true" dateTimePattern="${sysUser_lastlogin_date_format}" id="c_com_penho_java_rool_SysUser_lastLogin" property="lastLogin" z="0m7QtZK58OgzzOyeafVUjJtbOoA="/>
+            <table:column id="c_com_penho_java_rool_SysUser_userRole" property="userRole" z="I2CYQjQZPnlHEHRauGm0XZ7gCxI="/>
+        </table:table>
+    </page:list>
+</div>
