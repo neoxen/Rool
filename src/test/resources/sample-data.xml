@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="sys_user">
+        <column>id</column>
+        <column>enabled</column>
+        <column>last_login</column>
+        <column>password</column>
+        <column>user_name</column>
+        <column>version</column>
+        <row>
+            <value description="id">1</value>
+            <value description="enabled">1</value>
+            <value description="last_login">2011-11-04</value>
+            <value description="password">neo</value>
+            <value description="user_name">neo</value>
+            <value description="version">0</value>
+        </row>
+        <row>
+            <value description="id">2</value>
+            <value description="enabled">1</value>
+            <value description="last_login">2011-11-04</value>
+            <value description="password">fan</value>
+            <value description="user_name">fan</value>
+            <value description="version">0</value>
+        </row>
+    </table>
+    <table name="sys_role">
+        <column>id</column>
+        <column>role_name</column>
+        <column>version</column>
+        <row>
+            <value description="id">1</value>
+            <value description="role_name">ROLE_ADMIN</value>
+            <value description="version">0</value>
+        </row>
+        <row>
+            <value description="id">2</value>
+            <value description="role_name">ROLE_USER</value>
+            <value description="version">0</value>
+        </row>
+        <row>
+            <value description="id">3</value>
+            <value description="role_name">ROLE__SYS_USER</value>
+            <value description="version">0</value>
+        </row>
+    </table>
+    <table name="sys_user_user_role">
+        <column>sys_user</column>
+        <column>user_role</column>
+        <row>
+            <value description="sys_user">1</value>
+            <value description="user_role">1</value>
+        </row>
+        <row>
+            <value description="sys_user">1</value>
+            <value description="user_role">3</value>
+        </row>
+        <row>
+            <value description="sys_user">2</value>
+            <value description="user_role">2</value>
+        </row>
+    </table>
+</dataset>

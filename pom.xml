@@ -15,6 +15,11 @@
     <spring-security.version>3.0.5.RELEASE</spring-security.version>
     </properties>
     <repositories>
+    <repository>
+            <id>maven-central</id>
+            <name>Maven Central</name>
+            <url>http://repo1.maven.org/maven2</url>
+        </repository>
         <repository>
             <id>spring-maven-release</id>
             <name>Spring Maven Release Repository</name>
@@ -37,6 +42,11 @@
         </repository>
     </repositories>
     <pluginRepositories>
+        <pluginRepository>
+            <id>maven-central</id>
+            <name>Maven Central</name>
+            <url>http://repo1.maven.org/maven2</url>
+        </pluginRepository>
         <pluginRepository>
             <id>spring-maven-release</id>
             <name>Spring Maven Release Repository</name>
@@ -420,6 +430,48 @@
     </dependencies>
     <build>
         <plugins>
+        <!-- dbunit -->
+        <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>dbunit-maven-plugin</artifactId>
+                <version>1.0-beta-3</version>
+                <configuration>
+                    <dataTypeFactoryName>org.dbunit.ext.mysql.MySqlDataTypeFactory</dataTypeFactoryName>
+                    <driver>com.mysql.jdbc.Driver</driver>
+                    <username>root</username>
+                    <password>kaifa001</password>
+                    <url><![CDATA[jdbc:mysql://localhost/rool?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&sessionVariables=FOREIGN_KEY_CHECKS=0]]></url>
+                    <src>src/test/resources/sample-data.xml</src>
+                    <type>CLEAN_INSERT</type>
+                    <!-- schema>SYSTEM</schema -->
+                    <!-- skip> {maven.test.skip}</skip-->
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>test-compile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>operation</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <!-- Runs before integration tests and jetty:run-war -->
+                        <id>test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>operation</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>5.1.13</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <!-- dbunit end -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
