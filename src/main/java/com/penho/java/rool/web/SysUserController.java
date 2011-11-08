@@ -17,7 +17,7 @@ import java.util.List;
 public class SysUserController implements UserDetailsService{
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException, DataAccessException {
-        List users = SysUser.findSysUsersByUserNameEquals(username).getResultList();
+        List<SysUser> users = SysUser.findSysUsersByUserNameEquals(username).getResultList();
         if (users == null || users.isEmpty()) {
             throw new UsernameNotFoundException("user '" + username + "' not found...");
         } else {

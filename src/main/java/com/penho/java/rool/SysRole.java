@@ -19,4 +19,5 @@ public class SysRole implements GrantedAuthority{
     public String getAuthority() {
         return getRoleName();
     }
+
 }
