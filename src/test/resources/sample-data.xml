@@ -11,16 +11,16 @@
             <value description="id">1</value>
             <value description="enabled">1</value>
             <value description="last_login">2011-11-04</value>
-            <value description="password">neo</value>
-            <value description="user_name">neo</value>
+            <value description="password">8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918</value>
+            <value description="user_name">admin</value>
             <value description="version">0</value>
         </row>
         <row>
             <value description="id">2</value>
             <value description="enabled">1</value>
             <value description="last_login">2011-11-04</value>
-            <value description="password">fan</value>
-            <value description="user_name">fan</value>
+            <value description="password">04f8996da763b7a969b1028ee3007569eaf3a635486ddab211d512c85b9df8fb</value>
+            <value description="user_name">user</value>
             <value description="version">0</value>
         </row>
     </table>
@@ -40,7 +40,7 @@
         </row>
         <row>
             <value description="id">3</value>
-            <value description="role_name">ROLE__SYS_USER</value>
+            <value description="role_name">ROLE_SYS_USER</value>
             <value description="version">0</value>
         </row>
     </table>

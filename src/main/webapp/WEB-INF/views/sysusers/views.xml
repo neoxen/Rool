@@ -13,4 +13,7 @@
 <definition extends="default" name="sysusers/update">
         <put-attribute name="body" value="/WEB-INF/views/sysusers/update.jspx"/>
     </definition>
+<definition extends="default" name="sysusers/findSysUsersByUserNameEquals">
+        <put-attribute name="body" value="/WEB-INF/views/sysusers/findSysUsersByUserNameEquals.jspx"/>
+    </definition>
 </tiles-definitions>
