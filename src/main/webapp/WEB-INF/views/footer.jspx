@@ -13,7 +13,13 @@
     <c:out value=" | "/>
     <span>
       <spring:url value="/resources/j_spring_security_logout" var="logout"/>
+      <spring:url value="/changePassword/index" var="changePW"/>
       <c:out value="${pageContext.request.remoteUser}"/>
+      <c:out value=" [ "/>
+      <a href="${changePW}">
+        <spring:message code="security_change_password"/>
+      </a>
+      <c:out value=" ]"/>
       <c:out value=" [ "/>
       <a href="${logout}">
         <spring:message code="security_logout"/>
@@ -22,12 +28,6 @@
     </span>
   </c:if>
 
-  <span id="language">
-    <c:out value=" | "/>
-    <spring:message code="global_language"/>
-    <c:out value=": "/>
-  <util:language label="English" locale="en"/>
-    </span>
   <util:theme/>
 
   <spring:url value="/resources/images/springsource-logo.png" var="logo"/>

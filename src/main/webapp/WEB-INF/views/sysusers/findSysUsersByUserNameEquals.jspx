@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByUserNameEquals" id="ff_com_penho_java_rool_SysUser" path="/sysusers" z="GywylguPaOhgXYLtN0YZOCXXTZc=">
+        <field:input disableFormBinding="true" field="userName" id="f_com_penho_java_rool_SysUser_userName" min="3" required="true" z="RkNMaF24IiNZk07SeRFiaCb4R7c="/>
+    </form:find>
+</div>
