@@ -4,16 +4,24 @@
     <jsp:output omit-xml-declaration="yes"/>
     <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
         <menu:category id="c_sysrole" z="lPjF4+ftcWh4VmqcDnem4wWmBv0=">
-            <menu:item id="i_sysrole_new" messageCode="global_menu_new" url="/sysroles?form" z="LKTMnnGq0G81B1dqh+fIGx7xB2s="/>
-            <menu:item id="i_sysrole_list" messageCode="global_menu_list" url="/sysroles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="lTAKgBaMaha7UBcG9ORAb4dY1pw="/>
+            <menu:item id="i_sysrole_new" messageCode="global_menu_new" url="/sysroles?form"
+                       z="LKTMnnGq0G81B1dqh+fIGx7xB2s="/>
+            <menu:item id="i_sysrole_list" messageCode="global_menu_list"
+                       url="/sysroles?page=1&amp;size=${empty param.size ? 10 : param.size}"
+                       z="lTAKgBaMaha7UBcG9ORAb4dY1pw="/>
         </menu:category>
         <menu:category id="c_sysuser" z="/RQtQ7U7hGmnoOkZ9ICGbjTTYvk=">
-            <menu:item id="i_sysuser_new" messageCode="global_menu_new" url="/sysusers?form" z="Nqyi4LjVNhHL92Qgxbuoxh70ahI="/>
-            <menu:item id="i_sysuser_list" messageCode="global_menu_list" url="/sysusers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/aflOTcwxe4SyISp+9dFig8nRIA="/>
-            <menu:item id="fi_sysuser_usernameequals" messageCode="global_menu_find" url="/sysusers?find=ByUserNameEquals&amp;form" z="n/Sfb8W9HOKXwg6/NwALFcDjY7A="/>
+            <menu:item id="i_sysuser_new" messageCode="global_menu_new" url="/sysusers?form"
+                       z="Nqyi4LjVNhHL92Qgxbuoxh70ahI="/>
+            <menu:item id="i_sysuser_list" messageCode="global_menu_list"
+                       url="/sysusers?page=1&amp;size=${empty param.size ? 10 : param.size}"
+                       z="/aflOTcwxe4SyISp+9dFig8nRIA="/>
+            <menu:item id="fi_sysuser_usernameequals" messageCode="global_menu_find"
+                       url="/sysusers?find=ByUserNameEquals&amp;form" z="n/Sfb8W9HOKXwg6/NwALFcDjY7A="/>
         </menu:category>
         <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
-            <menu:item id="i_controller__changepasswordindex_id" messageCode="global_generic" url="/changePassword/index" z="user-managed"/>
+            <menu:item id="i_controller__changepasswordindex_id" messageCode="global_generic"
+                       url="/changePassword/index" z="user-managed"/>
         </menu:category>
     </menu:menu>
 </div>

@@ -1,0 +1,62 @@
+<div id="top-bar" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+     xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:spring="http://www.springframework.org/tags" version="2.0"
+     xmlns:util="urn:jsptagdir:/WEB-INF/tags/util">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+
+
+    <ul id="breadcrumbs">
+        <li>
+            <spring:url value="/" var="home"/>
+          <span>
+             <a href="${home}">
+                 <spring:message code="button_home"/>
+             </a>
+          </span>
+         </li>
+
+        <c:if test="${pageContext['request'].userPrincipal != null}">
+            <!--<c:out value=" | "/>-->
+       <li>
+      <spring:url value="/resources/j_spring_security_logout" var="logout"/>
+      <spring:url value="/changePassword/index" var="changePW"/>
+           当前用户：
+      <c:out value="${pageContext.request.remoteUser}"/>
+           </li><li>
+      <!--<c:out value=" [ "/>-->
+      <a href="${changePW}">
+          <spring:message code="security_change_password"/>
+      </a>
+      <!--<c:out value=" ]"/>-->
+           </li><li>
+      <!--<c:out value=" [ "/>-->
+      <a href="${logout}">
+          <spring:message code="security_logout"/>
+      </a>
+      <!--<c:out value=" ]"/>-->
+           </li>
+        </c:if>
+
+        <!--<li>-->
+        <!--<util:theme/>-->
+        <!--</li>-->
+    </ul>
+    <!--<div id="searchbox">-->
+
+
+
+
+        <!--<div class="search_bar">-->
+            <!--<form action="https://gitorious.org/search" method="get"><p>-->
+                <!--<input class="text search-field round-5" id="q" name="q" type="text"/>-->
+                <!--<input type="submit" value="Search" class="search-submit round-5"/>-->
+            <!--</p>-->
+
+                <!--<p class="hint search-hint" style="display: none;">-->
+                    <!--eg. 'wrapper', 'category:python' or '"document database"'-->
+                <!--</p>-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+

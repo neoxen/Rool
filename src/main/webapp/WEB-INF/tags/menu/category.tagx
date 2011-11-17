@@ -11,15 +11,18 @@
 		<c:if test="${empty label}">
 			<spring:message code="menu_category_${fn:toLowerCase(fn:substringAfter(id,'_'))}_label" var="label" htmlEscape="false"/>
 		</c:if>
-		
+		<div class="pull-box-container your-repositories pull-box-390">
 		<li id="${fn:escapeXml(id)}">
-			<h2>
+			<div class="pull-box-header"><h3>
 				<c:out value="${label}" />
-			</h2>
+			</h3></div>
+            <div class="pull-box-content">
 			<ul>
 				<jsp:doBody />
 			</ul>
+            </div>
 		</li>
+        </div>
 	
 	</c:if>
 </jsp:root>
