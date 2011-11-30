@@ -13,35 +13,68 @@
 
     <util:load-scripts/>
 
-    <spring:url var="cssgts" value="/resources/styles/gts-common.css"/>
-    <link href="${cssgts}" rel="stylesheet" type="text/css"/>
+    <spring:url value="/resources/scripts/jquery.js" var="jqueryjs"/>
+    <spring:url value="/resources/scripts/jqueryui.js" var="jqueryuijs"/>
+    <spring:url value="/resources/scripts/jquery-sander.js" var="jquerysanderjs"/>
+    <spring:url value="/resources/scripts/jquery.backgroundPosition.js" var="jquerybackgPjs"/>
+    <spring:url value="/resources/scripts/animations.js" var="animationsjs"/>
+    <spring:url value="/resources/scripts/RadMenu.js" var="radmenujs"/>
+
+    <script src="${jqueryjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+    <script src="${jqueryuijs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+    <script src="${jquerysanderjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+    <script src="${jquerybackgPjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+    <script src="${animationsjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+    <script src="${radmenujs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+
+
+    <spring:url var="stylescss" value="/resources/styles/styles.css"/>
+    <spring:url var="enginecss" value="/resources/styles/engine.css"/>
+    <spring:url var="menucss" value="/resources/styles/menu.css"/>
+
+    <link href="${stylescss}" rel="stylesheet" type="text/css"/>
+    <link href="${enginecss}" rel="stylesheet" type="text/css"/>
+    <link href="${menucss}" rel="stylesheet" type="text/css"/>
 
     <spring:message code="application_name" var="app_name" htmlEscape="false"/>
     <title><spring:message code="welcome_h3" arguments="${app_name}"/></title>
 </head>
 
 <body class="tundra spring">
-<div id="gtswrapper">
-    <tiles:insertAttribute name="header" ignore="true"/>
-    <tiles:insertAttribute name="topbar" ignore="true"/>
 
-    <div id="container">
-        <div id="content" class="">
+<div id="backgroundBottom">
 
+    <div class="siteContent">
 
-            <div class="with_divider">
-                <div id="left" class="w-390">
-                    <tiles:insertAttribute name="menu" ignore="true"/>
-                </div>
-                <div id="right" class="w-510">
-                    <div class="user-profile">
-                        <tiles:insertAttribute name="body" />
+        <tiles:insertAttribute name="header"/>
+
+        <div class="content">
+
+            <div class="blocLeft">
+
+                <div id="dle-content">
+                    <div class="article">
+                        <tiles:insertAttribute name="body"/>
+
                     </div>
+
                 </div>
+
             </div>
+
+            <tiles:insertAttribute name="menu"/>
+
+
+            <div class="clear"><!-- required for FF3 and Opera --></div>
+            <tiles:insertAttribute name="footer"/>
+
+
         </div>
+
     </div>
-    <tiles:insertAttribute name="footer" ignore="true"/>
+
 </div>
+
+
 </body>
 </html>

@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face { font-family: 'SegoeUILight'; src: url('fonts/segoeuil.eot'); src: local('☺'), url('fonts/segoeuil.ttf') format('truetype'), url('fonts/segoeuil.woff') format('woff'), url('fonts/segoeuil.otf') format('opentype');font-weight: normal; font-style: normal; }
+@font-face { font-family: 'SegoeUI'; src: url('fonts/segoeui.eot'); src: local('☺'), url('fonts/segoeui.ttf') format('truetype'), url('fonts/segoeui.woff') format('woff'), url('fonts/segoeui.otf') format('opentype');font-weight: normal; font-style: normal; }
+
+body { text-align: center; font-family:Arial, Helvetica, sans-serif; font-size: 12px; color: #666666; background: #0261A3 url(../images/background.jpg) top repeat-x; margin: 0; }
+img { border:none; }
+a { text-decoration:none; }
+
+h1, h2, h3 { font-weight: normal; }
+
+/* ----- déclaration des class globales ------------------------------ */
+.clear { clear: both; width: 0; height: 0; }
+.segoeLi { font-family:"SegoeUILight", Arial, sans-serif; font-weight:normal; }
+.segoe, .infosBloc h2, .article p { font-family:"SegoeUI", Arial, sans-serif; font-weight:normal; }
+.inBlock, .mainMenu li, .partnersList li, .footerBloc, .tweetList li, .twitterNavigate li, #menuSlider li, .topNews li, .navigateSlide li, .socialLinks  li, .memberNav li { display: inline-block; *display: inline; zoom: 1; }
+
+/* bloc principal */
+#backgroundBottom { width: auto; min-width: 970px; background: url(../images/backgroundBottom.png) center bottom no-repeat; }
+.siteContent { width: 950px; height: auto; min-height: 150px; border-top: #215392 solid 5px; margin: 0 auto; padding: 0 0 25px; text-align: left; }
+
+/* ----- Contenu du header ---------------------------------------- */
+.topHeader { margin: 20px 0 25px; }
+.topHeader h1 { margin: 0; padding: 0; }
+.linkLogo { display: block; width: 221px; height: 38px; background: url(../images/logo.png) left bottom no-repeat; text-indent: -9999px; }
+
+.linkLogo:hover { display: block; width: 221px; height: 38px; background: url(../images/logo_hover.png) left bottom no-repeat; text-indent: -9999px; }
+/* zone de recherche */
+.searchForm { margin-left: 120px; position: relative; }
+.txtSearch { width: 138px; height: 16px; padding: 10px 110px 11px 12px; background: #fff url(../images/bgTxtSearch.png) right top no-repeat; border: #215392 solid 4px; color: #acacac; font-size: 14px; outline: none; }
+.btSearch { position: absolute; top: 9px; right: 9px; }
+
+/* zone de gestion du compte */
+.manageAccount { width: 253px; height: 50px; overflow: hidden; margin-left: 20px; vertical-align: middle; color: #fff; position: relative; }
+.linksAccount { margin: 0; padding: 0 10px 0 0; list-style: none; text-align: right; }
+.linksAccount li { margin: 0; padding: 7px 0 0; }
+.linksAccount a { color: #fff; outline: none; font-size:13px; }
+.linksAccount a:hover { color: #FFF; text-decoration:underline; }
+/* zone des icons de gestion du compte membre */
+.memberNav { margin: 0; padding: 0; list-style: none; position: absolute; bottom: 0; right: 10px; }
+.memberNav li { padding: 0; height: 22px;  vertical-align: bottom; }
+
+.memberNav li a { color:#FFF; font-size:13px; font-family:"SegoeUILight", Arial, sans-serif; font-weight:normal; vertical-align:middle; }
+.memberNav li a:hover { color:#FFF; text-decoration:underline; }
+
+.memberName { margin: 0; padding: 0; font-size: 17px; line-height: 17px; text-align: right; padding-right: 10px; }
+.memberName span { color: #fff; }
+
+/* image de l'avatar */
+.userAvatar { vertical-align: middle; width: 56px; height: 50px; overflow: hidden; }
+.userAvatar span { display: block; background: #e8a401; color: #fff; font-size: 14px; line-height: 16px; padding: 15px 2px 2px; height: 33px; margin-top: -50px; }
+.userAvatar img { height: 50px; width: 56px; }
+
+/* menu principal */
+.mainMenu { margin: 25px 0 0; padding: 0; list-style: none; font-size: 18px;  }
+.mainMenu li { margin: 0 0 0 20px; }
+.mainMenu li:first-child { margin: 0; }
+.mainMenu li a { color: #fff; padding:3px; }
+.mainMenu li a:hover { color: #215392; background-color:#FFF; padding:3px; }
+
+/* ----- Contenu du content du header ---------------------------------------- */
+.headerContent { height: 50px; overflow: hidden; }
+.connectPanel { height: 238px; padding: 15px; margin-top: -268px; background: url(../images/connectPanel.jpg) center top no-repeat; color: #fff; position: relative; }
+.connectPanel a { color: #fff; }
+.connectPanel a:hover { opacity: 0.70; filter: alpha(opacity=70); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; }
+.connectPanel h2 { width: 460px; font-size: 30px; margin: 0; padding: 0; line-height: 30px; }
+.closeConnect { width: 410px; padding: 6px 45px 0 0; height: 32px; font-size: 18px; text-align: right; background: url(../images/closeConnect.png) right center no-repeat; }
+.cnxForm { text-align: center; margin-top: 35px; }
+.cnxForm .inBlock { vertical-align: bottom; }
+.cnxForm div { width: 280px; }
+.txtCnx { background: none; color: #fff; border: none; border-bottom: #fff solid 1px; width: 270px; padding: 5px 0; margin: 0 0 8px 10px; font-size: 21px; }
+.btConnect { margin: 0 0 10px 10px; cursor: pointer; }
+.connectLinks { position: absolute; bottom: 15px; right: 15px; padding: 0; margin: 0; list-style: none; text-align: right; font-size: 14px; line-height: 16px; }
+.connectLinks li { padding: 0; margin: 0; }
+.dateConnect { position: absolute; left: 15px; bottom: 15px; font-size: 30px; line-height: 32px; }
+.dateConnect span { display: block; }
+.connectHour { font-size: 60px; line-height: 55px; }
+
+/* ----- Gestion du content ----------------------------------------*/
+.content { height: auto; min-height: 150px; margin: 5px -10px 0; background: #fff url(../images/contentSeparate.png) 678px top repeat-y; border: #215392 solid 10px; }
+
+
+.blocLeft { width:678px; float:left; background:#fff url(../images/bgBlocLeft.jpg) center top no-repeat; padding-bottom: 15px; min-height: 500px }
+.article { color:#595959; margin:0; padding:20px 20px 25px 20px; }
+.articleAuthor { font-size:11px; color:#626774; }
+.articleAuthor a { color:#3f3f3f; font-weight:bolder; }
+.imgArticle { background:#efefef; width:628px; height: 140px; margin:20px 0; overflow: hidden; position: relative; }
+.scrollImgArticle { position: absolute; left: 0; bottom: 0; }
+.imgArticle span { display: block; padding:7px 7px 7px 30px; font-size:13px; background: #D54D34 url(../images/icon_tags.jpg) 1px 3px no-repeat; }
+.imgArticle span, .imgArticle span a, .imgArticle { color:#fff; }
+.imgArticle span a:hover { margin: -1px -2px; padding: 1px 2px; background: #fff; color: #D54D34; }
+.article h2 { font-size:36px; margin:0 0 10px 0; }
+.article h2 a { color:#004C90; }
+.article h2 a:hover { color: #000; }
+.article .categ { font-size:14px; color:#7f7f7f; line-height:12px; }
+.article .categ img { vertical-align:bottom; margin-right:5px; }
+.article p { font-size: 14px; line-height: 20px; }
+.article p  a { color: #4784a6; }
+.article p  a:hover { border-bottom: #4784a6 dotted 1px; }
+
+.article .linkMore { display:block; float:right; font-size:15px; line-height: 16px; color: #fff; padding: 5px 10px 5px 40px; margin-left: 10px; }
+.nbComments { background: url(../images/bgNbComments.png) 0 0 no-repeat; }
+.moreInfos { background: url(../images/bgLirePlus.png) 0 0 no-repeat; }
+
+.blocRight { margin-left: 680px; width: 270px; float: none; }
+.infosBloc h2 { background: #a7be0e; color: #fff; padding: 10px 15px; margin: 0; font-size: 15px; }
+.infosBloc h2.downloadh2 { background: #3e73c2; border-bottom: #fff solid 1px; padding: 0; }
+.infosBloc h2.downloadh2 a { display: block; padding: 10px 15px 10px 52px; background: url(../images/plusmoins.png) 20px 0 no-repeat; color: #fff; }
+.infosContent { text-align: left; float: none; }
+.infosContent li {display: block; font-size: 15px}
+.WinDownh3 { background: url(../images/iconWin8.jpg) left center no-repeat; color: #646464; font-size: 27px; margin: 0 5px; padding: 0 20px 0 65px; }
+.infosContent p { text-align: justify; line-height: 18px; font-size: 12px; }
+/* bouton download */
+.downloadNow { display: inline-block; width: 135px; height: 25px; padding: 0; margin: 5px 0; text-indent: -9999px; background: url(../images/bgDownload.png) 0 0 no-repeat; border: #d4d4d4 solid 1px; }
+/* articles les + vus */
+ul.mostView { margin:15px 30px 15px 30px; padding:0; color:#ffcb1b; }
+ul.mostView li { margin: 0 0 10px; padding: 0; }
+ul.mostView li a { color:#40a4d1; text-align:justify; display:block; font-size: 13px; outline: none; }
+ul.mostView li a:hover { color: #000; }
+/* top membres */
+.infosBloc h2.yellowH2, .ulTopMembre li, .ulTopMembre li a span { background: #e8a401; }
+.ulTopMembre { padding: 5px 0 0 5px; margin: 0; height: 250px; list-style: none; }
+.ulTopMembre li { float: left; padding: 0; margin: 5px; width: 75px; height: 75px; overflow: hidden; }
+.ulTopMembre li a { display: block; position: relative; color: #fff; margin-top: -75px; }
+.ulTopMembre li a img { width: 75px; height:75px; }
+.ulTopMembre li a span { display: block; padding: 55px 2px 0; height: 20px; overflow: hidden; font-size: 14px; white-space: nowrap; }
+
+/* pagination */
+.pagination { font-size:27px; color:#ccc; margin:0; padding:10px; list-style:none; }
+.pagePrec { float: left; background:url(../images/more_and_comment.jpg) left -38px no-repeat; padding:5px 0 5px 40px; width:150px; font-size:20px; }
+.pageSuiv { float: right; background:url(../images/more_and_comment.jpg) right 0 no-repeat; padding :5px 40px 5px 0; width:120px; font-size:20px; }
+.pagination a { color:#acacac; }
+.pagination a:hover { color:#ee5f00; }
+
+/* blocs publicité */
+.blocPub { text-align: center; padding: 10px 25px; }
+
+/* ----- Zone partenaires ------------------------------------------------------------*/
+.titlePartners { padding: 15px 20px; background: #ffaf35; border-top: #3e73c2 solid 1px; color: #5f4116;  }
+.titlePartners h2 { margin: 0; padding: 0; font-size: 12px; }
+.titlePartners span {  margin: 0; padding: 0; font-size: 12px;}
+.socialLinks { position: absolute; top: 26px; right: 20px; padding: 0; margin: 0; list-style: none; }
+.socialLinks  li { padding: 0; padding: 0; vertical-align: top; }
+.socialLinks a { display: block; margin-left: 5px; height: 20px; width: 22px; background: url(../images/iconFacetweet.png) -2px top no-repeat; text-indent: -9999px; }
+#socialFb { background-position: -32px top; width: 19px; }
+.socialLinks a:hover { opacity: 0.75; filter: alpha(opacity=75); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";  }
+.partnersList { margin: 0; padding: 15px 165px 15px 20px; background: #ffc150; list-style: none; position: relative; }
+.partnersList li { margin-left: 30px; }
+.partnersList li:first-child { margin-left: 0; }
+.partnersList li a { display: block; color: #936d28; font-size: 14px; }
+.partnersList li a:hover { margin: -5px; padding: 5px; background: #fff; }
+#becomePartner { position: absolute; right: 20px; top: 15px; }
+
+/* ----- Gestion des blocs du footer -------------------------------------------------- */
+.footerZone { padding: 15px 0 0; }
+.littlePadding { padding: 10px 0 0; }
+.footerBloc { background: #fff; margin: 0 0 0 6px; width: 105px; height: 97px; overflow: hidden; vertical-align: text-top; padding: 13px; color: #fff; }
+.footerBloc:hover { margin: 1px 1px 1px 7px; width: 103px; height: 95px; }
+.footerZone .footerBloc:first-child { margin: 0; }
+.footerZone .footerBloc:first-child:hover { margin: 1px; }
+.linkBloc { display: block; margin: -13px 0 0 -13px; padding: 13px; width: 105px; height: 97px; color: #fff; }
+.largeBloc, .largeLink { width: 237px; }
+.largeBloc:hover { width: 235px; }
+
+.largeBloc1, .largeLink1 { width: 230px; }
+.largeBloc1:hover { width: 227px; }
+
+.planPrincipal a:hover, .planSecondaire a:hover, #blocCopy a:hover, .linkBloc:hover, .listLastActus li a:hover, .infosNews h2  a:hover { opacity: 0.65; filter: alpha(opacity=65); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";  }
+.linkBloc { opacity: 0.90; filter: alpha(opacity=90); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";  }
+.linkBloc:hover { opacity: 1; filter: alpha(opacity=100); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";  }
+
+#blocPlan { background: #01ADDD; }
+#blocPlan .inBlock { width: 115px; vertical-align: top; }
+#blocPlan h2 { margin: 0; padding: 0; color: #006196; font-size: 61px; line-height: 61px; }
+.planPrincipal { font-size: 16px; line-height: 16px; margin: 0; padding: 0; list-style: none; }
+.planPrincipal li, .planSecondaire li { padding: 2px 0 0; margin: 0; }
+.planPrincipal a, .planSecondaire a { color: #fff; } 
+.planSecondaire { padding: 22px 0 0 0; list-style: none; margin: 0; }
+
+#blocPub { background: #D4B000; }
+#blocPub h2 { font-size: 16px; margin: 0; padding: 0; }
+#blocPub p { line-height: 13px; padding: 0; margin: 9px 0; }
+#blocPub a { color: #624a00; }
+#blocPub a:hover { color: #000; }
+
+#designBy { background: url(../images/designBy.png) center no-repeat; font-size: 16px; text-shadow:	1px 1px 2px #000; }
+.contactUs { background: #55B00D url(../images/contactUs.png) 13px 13px no-repeat; font-size: 15px; line-height: 16px; }
+.contactUs span { display: block; margin-top: 70px; }
+
+.contactUs1 { background: #55B00D; font-size: 23px; line-height: 23px; }
+.contactUs1 span { display: block; margin-top: 70px; }
+
+#blocCopy { background: #D6B301; }
+#blocCopy p { font-size: 25px; line-height: 28px; margin: 20px 0 0; }
+#blocCopy a { color: #fff; }
+
+.blocRSS { padding: 5px 13px 13px; height: 105px; background: #E75F21 url(../images/RSSfeed.png) 13px 66px no-repeat; text-align: right; font-size: 42px; line-height: 42px; }
+
+.blocFB { padding: 5px 13px 13px; height: 105px; background: #3B5998 url(../images/fb1.png) 13px 66px no-repeat; text-align: right; font-size: 28px; line-height: 42px; }
+
+.videoLink { text-shadow: 1px 1px 2px #000; font-size: 11px; background: url(../images/imgVideo.png) left 0 no-repeat; }
+.videoLink span { display: block; margin-top: 80px; }
+
+.videoLink:hover { background-position: left -123px; }
+
+/* bloc header au-dessus du menu */
+#lastActus { background: #D6B301; }
+#lastActus .inBlock { vertical-align: top; }
+#divDate { width: 65px; padding-right: 10px; font-size: 15px; line-height: 19px; }
+#divDate span { display: block; }
+.spanDay { font-size: 61px; line-height: 60px; }
+.contLastActus { width: 156px; }
+.h2lastActus { font-size: 17px; margin: 0; padding: 5px 0 0; }
+.listLastActus { margin: 0; padding: 5px 0 0 5px; list-style: none; }
+.listLastActus li { margin: 0; padding: 0 0 3px; line-height: 14px; }
+.listLastActus li a { color: #fff; }
+
+/* style bloc hotnews */
+.blocHotnews { position: relative; z-index: 10; }
+.linkHotnews { position: absolute; left: 0; bottom: 0; padding: 0; color: #fff; z-index: 15; }
+.linkHotnews img { width: 263px; height: 123px; }
+#hotTitle { position: absolute; top: 13px; left: 13px; text-shadow: 1px 1px 2px #000; z-index: 50; }
+#titleNews { display: block; background: #e66e00 url(../images/iconHotnews.png) 13px center no-repeat; padding: 8px 13px 8px 40px; line-height: 14px; }
+
+#marketLink { background: #3B5997 url(../images/iconMarket.png) 25px center no-repeat; padding: 33px 13px 13px 100px; width: 150px; height: 77px; font-size: 25px; line-height: 27px; }
+#marketLink span { display: block; font-size: 20px; }
+
+.headerPhotos { position: relative; }
+.headerPhotos a { padding: 0; display: block; }
+.headerPhotos span { display: block; position: absolute; left: 13px; bottom: 13px; text-shadow: 1px 1px 2px #000; color: #fff; }

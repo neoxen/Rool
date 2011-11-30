@@ -1,41 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fn="http://java.sun.com/jsp/jstl/functions"
      xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags"
-     xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" id="footer" version="2.0">
+     xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" class="titlePartners" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
 
 
-    <p class="footer-blurb">
-
-        <spring:url value="/" var="home"/>
           <span>
+             <spring:url value="/" var="home"/>
              <a href="${home}">
                  <spring:message code="button_home"/>
              </a>
-          </span>
+
         <c:if test="${pageContext['request'].userPrincipal != null}">
             <c:out value=" | "/>
-    <span>
-      <spring:url value="/resources/j_spring_security_logout" var="logout"/>
-      <spring:url value="/changePassword/index" var="changePW"/>
-      <c:out value="${pageContext.request.remoteUser}"/>
-      <c:out value=" [ "/>
-      <a href="${changePW}">
-          <spring:message code="security_change_password"/>
-      </a>
-      <c:out value=" ]"/>
-      <c:out value=" [ "/>
-      <a href="${logout}">
-          <spring:message code="security_logout"/>
-      </a>
-      <c:out value=" ]"/>
-    </span>
+
+            <spring:url value="/resources/j_spring_security_logout" var="logout"/>
+            <spring:url value="/changePassword/index" var="changePW"/>
+            <c:out value="${pageContext.request.remoteUser}"/>
+            <c:out value=" [ "/>
+            <a href="${changePW}">
+                <spring:message code="security_change_password"/>
+            </a>
+            <c:out value=" ]"/>
+            <c:out value=" [ "/>
+            <a href="${logout}">
+                <spring:message code="security_logout"/>
+            </a>
+            <c:out value=" ]"/>
+
         </c:if>
+        </span>
+    <!--<util:theme/>-->
+        <span style="float: right">
+            <c:out value="@ 2011 | Version 1.0"/>
+        </span>
 
-        <util:theme/>
-
-    </p>
-
-    <div class="clear"></div>
 </div>

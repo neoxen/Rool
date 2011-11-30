@@ -14,32 +14,6 @@
              </a>
           </span>
          </li>
-
-        <c:if test="${pageContext['request'].userPrincipal != null}">
-            <!--<c:out value=" | "/>-->
-       <li>
-      <spring:url value="/resources/j_spring_security_logout" var="logout"/>
-      <spring:url value="/changePassword/index" var="changePW"/>
-           当前用户：
-      <c:out value="${pageContext.request.remoteUser}"/>
-           </li><li>
-      <!--<c:out value=" [ "/>-->
-      <a href="${changePW}">
-          <spring:message code="security_change_password"/>
-      </a>
-      <!--<c:out value=" ]"/>-->
-           </li><li>
-      <!--<c:out value=" [ "/>-->
-      <a href="${logout}">
-          <spring:message code="security_logout"/>
-      </a>
-      <!--<c:out value=" ]"/>-->
-           </li>
-        </c:if>
-
-        <!--<li>-->
-        <!--<util:theme/>-->
-        <!--</li>-->
     </ul>
     <!--<div id="searchbox">-->
 

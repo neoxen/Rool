@@ -11,7 +11,7 @@
 
         <spring:url var="cssreset" value="/resources/styles/cssreset.css"/>
         <spring:url var="csslogin" value="/resources/styles/login.css"/>
-        <!--<spring:url var="jqueryjs" value="/resources/scripts/jquery-1.7.min.js"/>-->
+        <!--<spring:url var="jqueryjs" value="/resources/scripts/jquery-1.6.2.js"/>-->
         <!--<spring:url var="loginjs" value="/resources/scripts/login.js"/>-->
 
         <link href="${cssreset}" rel="stylesheet" type="text/css" />

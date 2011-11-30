@@ -1,0 +1,792 @@
+/* DEFAULT STYLES OF DATALIFE ENGINE */
+
+td { text-align:left; }
+
+
+/* ==================== Вывод формы по умолчанию */
+
+form {  
+	padding-top: 0px;
+	padding-bottom: 0px;	
+	padding-right: 0px; 
+	padding-left: 0px; 
+	margin: 0px;
+}
+
+/* ==================== Информационное оконо загрузки AJAX */
+#loading-layer {
+	display:none;
+	font-family: Verdana;font-size: 11px;
+	background:#000;padding:10px;
+	text-align:center;
+	border:1px solid #000;
+	color: #FFF;
+	border-radius: 5px;
+	-webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
+}
+
+/* ==================== Вывод архива */
+
+.archives {
+	margin-left: 0px;
+}
+.archives a {
+	color: #43637e;
+}
+
+/* ==================== Цитата и скрытый текст */
+
+.title_quote {
+	color:#F6821F;
+	background-color:#FEF2DA;
+	border-left:3px solid #F6821F;
+	border-bottom:1px solid #FFD376;
+	padding-top:12px;
+	padding-bottom:12px;
+	padding-left:16px;
+}
+.quote {
+	color:#673900;
+	background-color:#FEF2DA;
+	border-left:3px solid #F6821F;
+	padding:16px;
+	font-size:15px;
+	font-style:italic;
+}
+
+/* ==================== Тег SPOILER */
+
+.title_spoiler {
+	color: #555555;
+	background-color: #e0e7f8;
+	border: 1px dotted #afc2ec; 
+	font-weight: bold;
+	padding: 5px;
+}
+.title_spoiler img {
+	margin: 0; padding: 0;
+}
+.text_spoiler {
+	color: #555555;
+	background-color: #e0e7f8;
+	border: 1px dotted #afc2ec;
+	border-top: 0;
+	text-align: justify;
+	padding: 5px;
+}
+
+/* ==================== Tэг CODE */
+
+.scriptcode {
+	color:#545454;
+	background-color:#ffffe0; 
+	border:1px dotted #bebebe;
+	text-align: left;
+	padding: 5px;
+}
+
+/* ==================== Календарь */
+
+.weekday-active-v {
+	color: #5078d5;
+}
+.day-active-v {
+	color: #5078d5;
+}
+.calendar {
+	color: #555555;
+	font-family: verdana;
+	font-size: 11px
+}
+.calendar td, th {
+	 font-family: verdana;
+	 text-decoration: none;
+/* - */
+	 padding-left: 4px;
+ 	 padding-right: 3px;
+	 padding-top: 4px;
+	 padding-bottom: 3px;
+/* - */
+}
+.weekday {
+	color: #804040;
+	font-family: verdana;
+}
+.weekday-active {
+	color: #804040;
+	font-family: verdana;
+}
+.day-active {
+	color: #804040;
+	font-family: verdana;
+}
+.day-active a, .weekday-active a, .day-active-v a, .weekday-active-v a {
+	text-decoration: underline;
+}
+.monthlink {
+	color: #e73231;
+	text-decoration: none;
+}
+.day-current {
+	background-color: #f4f4f4;
+	border: 1px solid #cccccc;
+}
+
+/* ==================== Рейтинг статьи */
+
+.rating {
+	color: #555555;
+	font-size: 11px;		/* ! */
+	font-family: tahoma;	/* ! */
+	width: 85px;
+	height: 16px;
+}
+.unit-rating {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 85px;
+	height: 16px;
+	position: relative;
+	background-image: url(../dleimages/rating.gif);
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+.unit-rating li {
+	text-indent: -90000px;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+.unit-rating li a {
+	display: block;
+	width: 17px;
+	height: 16px;
+	text-decoration: none;
+	text-indent: -9000px;
+	z-index: 17;
+	position: absolute;
+	padding: 0px;
+}
+.unit-rating li a:hover {
+	background-image: url(../dleimages/rating.gif);
+	background-position: left center;
+	z-index: 2;
+	left: 0px;
+}
+.unit-rating a.r1-unit { left: 0px; }
+.unit-rating a.r1-unit:hover { width: 17px; }
+.unit-rating a.r2-unit { left: 17px; }
+.unit-rating a.r2-unit:hover { width: 34px; }
+.unit-rating a.r3-unit { left: 34px; }
+.unit-rating a.r3-unit:hover { width: 51px; }
+.unit-rating a.r4-unit { left: 51px; }	
+.unit-rating a.r4-unit:hover { width: 68px; }
+.unit-rating a.r5-unit { left: 68px; }
+.unit-rating a.r5-unit:hover { width: 85px; }
+.unit-rating li.current-rating {
+	background-image: url(../dleimages/rating.gif);
+	background-position: left bottom;
+	position: absolute;
+	height: 16px;
+	display: block;
+	text-indent: -9000px;
+	z-index: 1;
+}
+
+/* ==================== BB коды */
+ 
+/* различие bbcodes и bbcodes_poll исключительно в длине кнопки */
+/* класс bbcodes используем в списке персональных сообщений (pm.tpl)  и по умолчанию в модуле редактора сообщений*/
+
+.bbcodes {
+	background-color:#32A700;
+	border: 1px solid #32A700;
+	color:#FFF;
+	font-family:"SegoeUILight", Arial, sans-serif;  
+	font-weight:normal;
+	font-size: 16px;		/* ! */
+/*  width: 120px;  */
+	padding:3px;
+}
+
+.bbcodes:hover {
+	background-color:#FFF;
+	border: 1px solid #32A700;
+	color:#32A700;
+	font-family:"SegoeUILight", Arial, sans-serif;  
+	font-weight:normal;
+	font-size: 16px;		/* ! */
+/*  width: 120px;  */
+	padding:3px;
+}
+
+.editor textarea {
+	width:640px;
+	height:156px; 
+	margin-top:5px; 
+	border: 1px solid #B9B9B9; 
+	color: #908d8d; 
+	padding:7px; 
+	font-family:Arial; 
+	background-image:url(../images/comment_bg.jpg); background-repeat:repeat-x;
+}
+
+.editor_button {
+	float: left;
+	cursor: pointer;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.editor_buttoncl {
+	float: left;
+	cursor: pointer;
+	padding-left: 1px;
+	padding-right: 1px;
+	border-left: 1px solid #bbbbbb;
+	border-right: 1px solid #bbbbbb;
+}
+.editbclose {
+	float: right;
+	cursor: pointer;
+}
+.editor_button select {
+	font-family: tahoma;
+	font-size: 11px;
+}
+.editor_button img {margin: 0; padding: 0;}
+.editbclose img {margin: 0; padding: 0;}
+.editor_button_brk img {margin: 0; padding: 0;}
+
+.bbcodes_poll {
+	background-color: #ffffff;
+	border: 1px solid #1434B0;
+	color: #ffffff;
+	font-size: 11px;		/* ! */
+	font-family: tahoma;	/* ! */
+	background-image: url(../images/dlet_bttn_bbcodes.gif);
+	background-repeat: repeat-x;
+	width: 100px;
+	height: 20px;
+	font-weight: bold;
+}
+
+/* ==================== Дополнительные поля новостей */
+.xfields {
+	padding-top: 5px;
+}
+
+.xfields textarea {
+	color: #555555;			/* ! */
+	font-size: 11px;		/* ! */
+	font-family: tahoma;	/* ! */
+	background-image: url(../images/dlet_field_o.gif);
+	background-repeat: repeat-x;
+	width: 98%;
+	height: 150px;
+	border: 1px solid #e0e0e0;
+	background-color: #ffffff;
+	margin: 0px 1px 0px 0px;
+	padding: 0px;
+}
+.xfields input {
+	color: #555555;			/* ! */
+	font-size: 11px;		/* ! */
+	font-family: tahoma;	/* ! */
+	background-image: url(../images/dlet_field_o.gif);
+	background-repeat: repeat-x;
+
+	width: 300px;
+	height: 14px;
+	border: 1px solid #e0e0e0;
+	background-color: #ffffff;
+}
+.xfields select {
+	color: #555555;			/* ! */
+	font-size: 11px;		/* ! */
+	font-family: tahoma;	/* ! */
+
+	height: 18px;
+	border: 1px solid #e0e0e0;
+	background-color: #ffffff;
+}
+
+/* ==================== Дополнительные поля профиля пользователей */
+.xprofile {
+	padding-top: 5px;
+}
+
+.xprofile textarea {
+	color: #555555;			/* ! */
+	font-size: 11px;		/* ! */
+	font-family: tahoma;	/* ! */
+	background-image: url(../images/dlet_field_o.gif);
+	background-repeat: repeat-x;
+
+	width: 320px;
+	height: 86px;
+	border: 1px solid #e0e0e0;
+	background-color: #ffffff;
+}
+.xprofile input {
+	color: #555555;			/* ! */
+	font-size: 11px;		/* ! */
+	font-family: tahoma;	/* ! */
+	background-image: url(../images/dlet_field_o.gif);
+	background-repeat: repeat-x;
+
+	width: 250px;
+	height: 14px;
+	border: 1px solid #e0e0e0;
+	background-color: #ffffff;
+}
+.xprofile select {
+	color: #555555;			/* ! */
+	font-size: 11px;		/* ! */
+	font-family: tahoma;	/* ! */
+	background-image: url(../images/dlet_field_o.gif);
+	background-repeat: repeat-x;
+
+	height: 18px;
+	border: 1px solid #e0e0e0;
+	background-color: #ffffff;
+}
+/* ==================== Персональные сообщения */ 
+
+.pm_head {
+	font-size: 12px;		/* ! */
+	font-family: tahoma;	/* ! */ 
+}
+.pm_list {
+	color: #555555;
+}
+.pm_list a {
+	color: #5078d5;
+}
+
+/* ==================== Выпадающее меню */
+
+#dropmenudiv {
+	border: 1px solid #CCC;
+	background-color: #ffffff;
+	line-height: 20px;
+	margin: 2px;
+	text-align:left;
+}
+#dropmenudiv a
+{
+	padding:4px;
+	display: block;
+	text-indent: 3px;
+	border: 1px solid #ffffff;
+	margin: 1px;
+	color: #666;
+	text-decoration: none;
+	text-align:left;
+}
+#dropmenudiv a:hover {
+	/* hover background color */
+	background-color: #e4e4e4;
+	color: #000000;
+	text-align:left;
+}/* 
+
+/* ==================== Опрос пользователей */
+
+.vote {
+	color: #555555;
+}
+
+/* ==================== Ссылка на скачивание прикрепленного файла */
+
+.attachment {
+	color: #808080;
+}
+
+/* ==================== Поиск по сайту и результаты поиска */
+
+.search {
+	color: #555555;
+	text-decoration: none;
+}
+.textin {
+	color: #555555;			/* !!! Текст в полях поисковой формы (расширенной) !!! */
+	font-size: 11px;
+	font-family: tahoma;
+	background-image: url(../images/dlet_field_o.gif); background-repeat: repeat-x;
+	border: 1px solid #e0e0e0;
+	text-decoration: none;
+	padding-left: 3px;
+	background-color: #ffffff;
+}
+
+.sresult  {
+	text-align: justify;
+	font-weight: normal;
+	line-height: 16px;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #555555;
+}
+
+/* ==================== массовые действия для комментариев */
+
+.mass_comments_action  {
+	visibility:hidden;
+	display:none;
+
+}
+
+/* ==================== показ оригинальной картинки загруженной на сайт из уменьшенной копии */
+.highslide-wrapper, .highslide-outline {
+	background: #FFFFFF;
+	text-align:left;
+}
+.highslide-image {
+	border: 2px solid #FFFFFF;
+}
+.highslide-active-anchor {
+   visibility: hidden;
+}  
+.highslide-active-anchor img {
+	visibility: hidden;
+}
+.highslide-dimming {
+	background: black;
+}
+.highslide-html {
+	background-color: white;
+}
+.highslide-loading {
+    display: block;
+	color: #ffffff;
+	font-size: 9px;
+	font-weight: bold;
+    text-decoration: none;
+	padding: 3px;
+	border: 1px solid #ffffff;
+    background-color: #000000;
+	text-align:left;
+}
+a.highslide-full-expand {
+	background: url(../dleimages/fullexpand.gif) no-repeat;
+	display: block;
+	margin: 0 10px 10px 0;
+	width: 34px;
+	height: 34px;
+	text-align:left;
+}
+.highslide-display-block {
+    display: block;
+	text-align:left;
+}
+.highslide-display-none {
+    display: none;
+	text-align:left;
+}
+.highslide-caption {
+	display: none;
+	padding: 5px;
+	background: white;
+	text-align:left;
+}
+
+.highslide-controls {
+    width: 195px;
+    height: 40px;
+    background: url(../../../engine/classes/highslide/graphics/controlbar-black-border.gif) 0 -90px no-repeat;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.highslide-controls ul {
+	position: relative;
+	text-align:left;
+	left: 15px;
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: url(../../../engine/classes/highslide/graphics/controlbar-black-border.gif) right -90px no-repeat;
+}
+.highslide-controls li {
+    float: left;
+    padding: 5px 0;
+	text-align:left;
+}
+.highslide-controls a {
+    background: url(../../../engine/classes/highslide/graphics/controlbar-black-border.gif);
+    display: block;
+	text-align:left;
+    float: left;
+    height: 30px;
+    width: 30px;
+    outline: none;
+}
+.highslide-controls a.disabled {
+    cursor: default;
+}
+.highslide-controls a span {
+    /* hide the text for these graphic buttons */
+    display: none;
+}
+ 
+/* The CSS sprites for the controlbar */
+.highslide-controls .highslide-previous a {
+    background-position: 0 0;
+}
+.highslide-controls .highslide-previous a:hover {
+    background-position: 0 -30px;
+}
+.highslide-controls .highslide-previous a.disabled {
+    background-position: 0 -60px !important;
+}
+.highslide-controls .highslide-play a {
+    background-position: -30px 0;
+}
+.highslide-controls .highslide-play a:hover {
+    background-position: -30px -30px;
+}
+.highslide-controls .highslide-play a.disabled {
+	background-position: -30px -60px !important;
+}
+.highslide-controls .highslide-pause a {
+    background-position: -60px 0;
+}
+.highslide-controls .highslide-pause a:hover {
+    background-position: -60px -30px;
+}
+.highslide-controls .highslide-next a {
+    background-position: -90px 0;
+}
+.highslide-controls .highslide-next a:hover {
+    background-position: -90px -30px;
+}
+.highslide-controls .highslide-next a.disabled {
+    background-position: -90px -60px !important;
+}
+.highslide-controls .highslide-move a {
+    background-position: -120px 0;
+}
+.highslide-controls .highslide-move a:hover {
+    background-position: -120px -30px;
+}
+.highslide-controls .highslide-full-expand a {
+    background-position: -150px 0;
+}
+.highslide-controls .highslide-full-expand a:hover {
+    background-position: -150px -30px;
+}
+.highslide-controls .highslide-full-expand a.disabled {
+    background-position: -150px -60px !important;
+}
+.highslide-controls .highslide-close a {
+    background-position: -180px 0;
+}
+.highslide-controls .highslide-close a:hover {
+    background-position: -180px -30px;
+}
+
+/* Вид изображения: с прямыми краями и тенью */
+.wide-border {
+	background: white;
+}
+.wide-border .highslide-image {
+	border-width: 10px;
+}
+.wide-border .highslide-caption {
+	padding: 0 10px 10px 10px;
+}
+
+/* Вид изображения: только тень */
+.borderless .highslide-image {
+	border: none;
+}
+.borderless .highslide-caption {
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+	background: white;
+}
+
+/* Вид изображения: только рамка без тени */
+.less .highslide-image {
+	border: 1px solid #000000;
+}
+.less .highslide-caption {
+	border: 1px solid #000000;
+	background: white;
+}
+
+
+/* ==================== Облако тегов */
+.clouds_xsmall {
+	font-size: x-small;
+}
+.clouds_small {
+	font-size: small;
+}
+.clouds_medium {
+	font-size: medium;
+}
+.clouds_large {
+	font-size: large;
+}
+.clouds_xlarge {
+	font-size: x-large;
+}
+
+/* ==================== Автозаполнение облака тегов */
+.autocomplete-w1 { position:absolute; top:0px; left:0px; margin:8px 0 0 6px; /* IE6 fix: */ _background:none; _margin:0; }
+.autocomplete { border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; }
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { font-size: 11px;font-family: verdana;padding:2px 5px; white-space:nowrap; }
+.autocomplete strong { font-weight:normal; color:#3399FF; }
+
+/* ==================== Быстрый поиск на сайте */
+#searchsuggestions { border-width:1px; border-color:#919191; border-style:solid; width:300px; background-color:#5c9ccc; font-size:10px; line-height:14px; }
+#searchsuggestions a { padding:5px;display:block; background-color:#ffffff; clear:left; height:70px; text-decoration:none; }
+#searchsuggestions a:hover { background-color:#fdd08b; color:#ffffff; }
+#searchsuggestions a span.searchheading { background: #5c9ccc; display:block; font-weight:bold; padding:5px; color:#ffffff; }
+#searchsuggestions a:hover span.searchheading { color:#ffffff; }
+#searchsuggestions a span {color:#555555; }
+#searchsuggestions a:hover span { color:#0000; }
+#searchsuggestions span.seperator { float:right; padding-right:15px; margin-right:5px;}
+#searchsuggestions span.seperator a { background-color:transparent; display:block; height:auto; color:#ffffff; }
+#searchsuggestions span.notfound {  padding:5px;background-color:#ffffff; display:block; height:auto; color:#00000; }
+/* ==================== Диалоговые и всплывающие окна jQuery UI */
+/*---Диалоговые и всплывающие окна jQuery UI---*/
+.ui-helper-clearfix:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+* html .ui-helper-clearfix { height: 1%; }
+.ui-helper-clearfix { display: block; }
+.ui-icon { background-repeat: no-repeat; display: block; overflow: hidden; text-indent: -99999px; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button, .ui-widget { font-size: 11px; }
+.ui-widget-content { background: #fff 50% bottom repeat-x; border: 1px solid #dedede; color: #222; }
+.ui-widget-header {
+	background: #cccccc url(../images/ui-bg_gloss-wave.png) 50% 50% repeat-x;
+	color: #000;
+	font-weight: bold;
+}
+.ui-widget-header a { color: #fff; }
+.ui-state-default, .ui-widget-content .ui-state-default {
+	background: #eaeaea url(../images/ui-bg_glass_85.png) 50% 50% repeat-x;
+	border: 1px solid #cfcfcf;
+	color: #868686;
+	font-weight: bold;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #2e6e9e; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus {
+	background: #eaeaea url(../images/ui-bg_glass_75.png) 50% 50% repeat-x;
+	border: 1px solid #a7a7a7;
+	color: #4e4e4e;
+	font-weight: bold;
+}
+.ui-state-hover a, .ui-state-hover a:hover { color: #1d5987; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active {
+	background: #d0e5f5 50% 50% repeat-x;
+	border: 1px solid #a7a7a7;
+	color: #e17009;
+	font-weight: bold;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #e17009; text-decoration: none; }
+.ui-widget :active { outline: none; }
+.ui-state-error {
+	background: #fef1ec 50% 50% repeat-x;
+	border: 1px solid #dedede;
+	color: #cd0a0a;
+}
+.ui-widget-header .ui-icon { background-image: url(../images/ui-icons.png); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon { background-image: url(../images/ui-icons_h.png); }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-button .ui-button-text { display: block; line-height: 1.4em; }
+.ui-button-text-only .ui-button-text { padding: .4em .8em; }
+input.ui-button { padding: .4em 1em; }
+.ui-button-set { margin-right: 7px; }
+.ui-button-set .ui-button { margin-left: 0; margin-right: -.3em; }
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; }
+.ui-dialog {
+	overflow: hidden;
+	padding: .2em;
+	position: absolute;
+	width: 300px;
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+.ui-dialog .ui-dialog-titlebar { padding: .5em 1em .3em; position: relative; }
+.ui-dialog .ui-dialog-title { float: left; margin: .1em 16px .2em 0; }
+.ui-dialog .ui-dialog-titlebar-close {
+	height: 18px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 19px;
+}
+.ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
+.ui-dialog .ui-dialog-content {
+	background: none;
+	border: 0;
+	overflow: hidden;
+	padding: .5em 1em;
+	position: relative;
+	zoom: 1;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	background-image: none;
+	border-width: 1px 0 0 0;
+	margin: .5em 0 0 0;
+	padding: .3em 1em .5em .4em;
+	text-align: left;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	cursor: pointer;
+	float: right;
+	line-height: 1.4em;
+	margin: .5em .4em .5em 0;
+	overflow: visible;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+}
+.ui-dialog .ui-resizable-se { bottom: 3px; height: 14px; right: 3px; width: 14px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+
+/* ==================== Автозаполнение облака тегов */
+.ui-autocomplete { position: absolute; cursor: default; }
+
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+.ui-menu {
+	list-style:none;
+	padding: 2px;
+	margin: 0;
+	display:block;
+	float: left;
+}
+.ui-menu .ui-menu {
+	margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+	margin:0;
+	padding: 0;
+	zoom: 1;
+	float: left;
+	clear: left;
+	width: 100%;
+}
+.ui-menu .ui-menu-item a {
+	text-decoration:none;
+	display:block;
+	padding:.2em .4em;
+	line-height:1.5;
+	zoom:1;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: -1px;
+}
