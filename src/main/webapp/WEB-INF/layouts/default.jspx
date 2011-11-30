@@ -13,19 +13,19 @@
 
     <util:load-scripts/>
 
-    <spring:url value="/resources/scripts/jquery.js" var="jqueryjs"/>
-    <spring:url value="/resources/scripts/jqueryui.js" var="jqueryuijs"/>
-    <spring:url value="/resources/scripts/jquery-sander.js" var="jquerysanderjs"/>
-    <spring:url value="/resources/scripts/jquery.backgroundPosition.js" var="jquerybackgPjs"/>
-    <spring:url value="/resources/scripts/animations.js" var="animationsjs"/>
-    <spring:url value="/resources/scripts/RadMenu.js" var="radmenujs"/>
+    <spring:url value="/resources/scripts/jquery-1.6.2.js" var="jqueryjs"/>
+    <spring:url value="/resources/scripts/jquery.ui.core.js" var="jqueryuijs"/>
+    <spring:url value="/resources/scripts/jquery.ui.widget.js" var="jquerysanderjs"/>
+    <spring:url value="/resources/scripts/jquery.ui.accordion.js" var="jquerybackgPjs"/>
+    <spring:url value="/resources/scripts/menu-accordion.js" var="animationsjs"/>
+    <!--<spring:url value="/resources/scripts/RadMenu.js" var="radmenujs"/>-->
 
     <script src="${jqueryjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
     <script src="${jqueryuijs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
     <script src="${jquerysanderjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
     <script src="${jquerybackgPjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
-    <script src="${animationsjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
-    <script src="${radmenujs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+
+    <!--<script src=" {radmenujs}" type="text/javascript"></script>-->
 
 
     <spring:url var="stylescss" value="/resources/styles/styles.css"/>
@@ -75,6 +75,7 @@
 
 </div>
 
+<script src="${animationsjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
 </body>
 </html>

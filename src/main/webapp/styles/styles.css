@@ -1,10 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
-@font-face { font-family: 'SegoeUILight'; src: url('fonts/segoeuil.eot'); src: local('☺'), url('fonts/segoeuil.ttf') format('truetype'), url('fonts/segoeuil.woff') format('woff'), url('fonts/segoeuil.otf') format('opentype');font-weight: normal; font-style: normal; }
-@font-face { font-family: 'SegoeUI'; src: url('fonts/segoeui.eot'); src: local('☺'), url('fonts/segoeui.ttf') format('truetype'), url('fonts/segoeui.woff') format('woff'), url('fonts/segoeui.otf') format('opentype');font-weight: normal; font-style: normal; }
 
-body { text-align: center; font-family:Arial, Helvetica, sans-serif; font-size: 12px; color: #666666; background: #0261A3 url(../images/background.jpg) top repeat-x; margin: 0; }
+body { text-align: center; font-family:Arial, Helvetica, sans-serif; font-size: 12px; color: #666666; background: #0261A3 ; margin: 0; }
 img { border:none; }
 a { text-decoration:none; }
 
@@ -17,7 +15,7 @@ h1, h2, h3 { font-weight: normal; }
 .inBlock, .mainMenu li, .partnersList li, .footerBloc, .tweetList li, .twitterNavigate li, #menuSlider li, .topNews li, .navigateSlide li, .socialLinks  li, .memberNav li { display: inline-block; *display: inline; zoom: 1; }
 
 /* bloc principal */
-#backgroundBottom { width: auto; min-width: 970px; background: url(../images/backgroundBottom.png) center bottom no-repeat; }
+#backgroundBottom { width: auto; min-width: 970px;  }
 .siteContent { width: 950px; height: auto; min-height: 150px; border-top: #215392 solid 5px; margin: 0 auto; padding: 0 0 25px; text-align: left; }
 
 /* ----- Contenu du header ---------------------------------------- */
@@ -105,6 +103,7 @@ h1, h2, h3 { font-weight: normal; }
 
 .blocRight { margin-left: 680px; width: 270px; float: none; }
 .infosBloc h2 { background: #a7be0e; color: #fff; padding: 10px 15px; margin: 0; font-size: 15px; }
+.infosBloc h2.menuHeader{ font-size: 15px}
 .infosBloc h2.downloadh2 { background: #3e73c2; border-bottom: #fff solid 1px; padding: 0; }
 .infosBloc h2.downloadh2 a { display: block; padding: 10px 15px 10px 52px; background: url(../images/plusmoins.png) 20px 0 no-repeat; color: #fff; }
 .infosContent { text-align: left; float: none; }

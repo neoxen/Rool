@@ -20,7 +20,7 @@
 
         <div class="infosBloc">
 
-            <h2>
+            <h2 class="menuHeader">
                 <c:out value="${label}"/>
             </h2>
 

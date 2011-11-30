@@ -7,9 +7,9 @@
  */
 
   // sidebar navigation
-  $('#_menu').accordion({
+  $('#accordionMenu').accordion({
     autoHeight: false,
     active: 0,
-    header: 'div.pull-box-header'
-//    event: 'mouseover'
+    header: '.menuHeader',
+    event: 'mouseover'
   });
