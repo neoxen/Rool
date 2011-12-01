@@ -22,7 +22,7 @@
         <div class="submit" id="${fn:escapeXml(id)}_${fn:escapeXml(finderName)}_submit">
           <spring:message code="button_find" var="find_button" htmlEscape="false" />
           <script type="text/javascript">Spring.addDecoration(new Spring.ValidateAllDecoration({elementId:'proceed', event:'onclick'}));</script>
-          <input id="proceed" type="submit" value="${fn:escapeXml(find_button)}"/>
+          <input id="proceed" type="submit" value="${fn:escapeXml(find_button)}" class="moreInfos linkMore" style="background-position: 0px 0px;"/>
         </div>
       </form:form>
     </util:panel>

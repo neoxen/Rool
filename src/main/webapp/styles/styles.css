@@ -97,7 +97,8 @@ h1, h2, h3 { font-weight: normal; }
 .article p  a { color: #4784a6; }
 .article p  a:hover { border-bottom: #4784a6 dotted 1px; }
 
-.article .linkMore { display:block; float:right; font-size:15px; line-height: 16px; color: #fff; padding: 5px 10px 5px 40px; margin-left: 10px; }
+.article .linkMore { display:block; font-size:12px; line-height: 16px; color: #fff; padding: 5px 10px 5px 40px; margin-left: 10px;
+    height: 26px;border: 0px;font-weight: bold;cursor: pointer;}
 .nbComments { background: url(../images/bgNbComments.png) 0 0 no-repeat; }
 .moreInfos { background: url(../images/bgLirePlus.png) 0 0 no-repeat; }
 

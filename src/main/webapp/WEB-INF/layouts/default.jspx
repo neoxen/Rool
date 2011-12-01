@@ -17,16 +17,16 @@
     <spring:url value="/resources/scripts/jquery.ui.core.js" var="jqueryuijs"/>
     <spring:url value="/resources/scripts/jquery.ui.widget.js" var="jquerysanderjs"/>
     <spring:url value="/resources/scripts/jquery.ui.accordion.js" var="jquerybackgPjs"/>
-    <spring:url value="/resources/scripts/menu-accordion.js" var="animationsjs"/>
-    <!--<spring:url value="/resources/scripts/RadMenu.js" var="radmenujs"/>-->
+    <spring:url value="/resources/scripts/jquery.backgroundPosition.js" var="backgroundjs"/>
+    <spring:url value="/resources/scripts/animations.js" var="animationsjs"/>
 
     <script src="${jqueryjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
     <script src="${jqueryuijs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
     <script src="${jquerysanderjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
     <script src="${jquerybackgPjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+    <script src="${backgroundjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
-    <!--<script src=" {radmenujs}" type="text/javascript"></script>-->
-
+    <script src="${animationsjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
     <spring:url var="stylescss" value="/resources/styles/styles.css"/>
     <spring:url var="enginecss" value="/resources/styles/engine.css"/>
@@ -75,7 +75,6 @@
 
 </div>
 
-<script src="${animationsjs}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
 </body>
 </html>

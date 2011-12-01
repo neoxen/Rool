@@ -20,7 +20,7 @@
                    type="password"/>
 
             <p>
-                <input type="submit" value="${btnChangePass}"/>
+                <input type="submit" value="${btnChangePass}" class="moreInfos linkMore" style="background-position: 0px 0px;"/>
             </p>
         </form>
     </util:panel>
