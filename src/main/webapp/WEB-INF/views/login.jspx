@@ -8,32 +8,41 @@
     <spring:url value="/resources/j_spring_security_check" var="form_url"/>
 
     <form id="loginInfo" name="f" action="${fn:escapeXml(form_url)}" method="POST">
-        <fieldset id="wrapper" title="登录系统">
+        <fieldset id="wrapper" title="${title}">
             <div id="loginFrame">
                 <c:if test="${not empty param.login_error}">
-                    <div class="errors">
+                    <div class="error">
                         <p>
                             <spring:message code="security_login_unsuccessful"/>
                         </p>
                     </div>
                 </c:if>
                 <c:if test="${empty param.login_error}">
-                    <p>
-                        <spring:message code="security_login_message"/>
-                    </p>
+                    <div class="warning">
+                        <p>
+                            <spring:message code="security_login_message"/>
+                        </p>
+                    </div>
                 </c:if>
 
-                <p class="login"><label>用户名：</label></p>
+                <div class="divlayer"><div class="login"><label><spring:message
+                        code="label_com_penho_java_rool_sysuser_username"/></label></div>
 
-                <p class="login"><input id="j_username" name="j_username" type="text"/></p>
+                    <div class="login"><input id="j_username" name="j_username" type="text"/></div></div>
 
-                <p class="login"><label>密码：</label></p>
+                <div class="divlayer"><div class="login"><label><spring:message
+                        code="label_com_penho_java_rool_sysuser_password"/></label></div>
 
-                <p class="login"><input id="j_password" name="j_password" type="password"/></p>
-                <spring:url var="buttonimage" value="/resources/images/dl.gif"/>
+                    <div class="login"><input id="j_password" name="j_password" type="password"/></div>
+                </div>
 
-                <p class="submit"><input type="image" src="${buttonimage}" alt="点击登录系统" onclick="checkUser()"
-                                         id="btnsubmit"/></p>
+                <spring:url var="buttonimage" value="/resources/images/btnLogin.png"/>
+
+                <div class="divlayer last"><div class="submit"><input type="image" src="${buttonimage}" alt="${title}"
+                                                             id="btnsubmit"/></div>
+                </div>
+
+
             </div>
 
         </fieldset>

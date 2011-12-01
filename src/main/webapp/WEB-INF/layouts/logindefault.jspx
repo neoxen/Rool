@@ -23,7 +23,7 @@
 		<title><spring:message code="welcome_h3" arguments="${app_name}" /></title>
 	</head>
 	
-  	<body style="text-align: center" screen_capture_injected="true">
+  	<body style="text-align: center" >
 	    <tiles:insertAttribute name="body"/>
 	</body>
 </html>
